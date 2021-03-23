@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>activePlayer</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="activePlayer.css"/>
+</head>
+<body>
+<div id="activePlayer">
+	<div id="playerLocationTable">
+		<div id="scarlet">
+			<svg class="pieceCellScarlet">
+				<rect id="pieceCellScarlet" rx="0" ry="0" x="0" y="0" width="123" height="23">
+				</rect>
+			</svg>
+			<svg class="pieceScarlet">
+				<ellipse id="pieceScarlet" rx="8.5" ry="8.5" cx="8.5" cy="8.5">
+				</ellipse>
+			</svg>
+			<div id="pieceLabelScarlet">
+				<span>Miss Scarlet</span>
+			</div>
+		</div>
+		<div id="mustard">
+			<svg class="pieceCellMustard">
+				<rect id="pieceCellMustard" rx="0" ry="0" x="0" y="0" width="123" height="23">
+				</rect>
+			</svg>
+			<svg class="pieceMustard" viewBox="0 0 17 17">
+				<path id="pieceMustard" d="M 8.5 0 C 13.19441986083984 0 17 3.805579662322998 17 8.5 C 17 13.19441986083984 13.19441986083984 17 8.5 17 C 3.805579662322998 17 0 13.19441986083984 0 8.5 C 0 3.805579662322998 3.805579662322998 0 8.5 0 Z">
+				</path>
+			</svg>
+			<div id="pieceLabelMustard">
+				<span>Col. Mustard</span>
+			</div>
+		</div>
+		<div id="white">
+			<svg class="pieceCellWhite">
+				<rect id="pieceCellWhite" rx="0" ry="0" x="0" y="0" width="123" height="23">
+				</rect>
+			</svg>
+			<svg class="pieceWhite">
+				<ellipse id="pieceWhite" rx="8.5" ry="8.5" cx="8.5" cy="8.5">
+				</ellipse>
+			</svg>
+			<div id="pieceLabelWhite">
+				<span>Mrs. White</span>
+			</div>
+		</div>
+		<div id="green">
+			<svg class="pieceCellGreen">
+				<rect id="pieceCellGreen" rx="0" ry="0" x="0" y="0" width="123" height="23">
+				</rect>
+			</svg>
+			<svg class="pieceGreen" viewBox="0 0 17 17">
+				<path id="pieceGreen" d="M 8.5 0 C 13.19441986083984 0 17 3.805579662322998 17 8.5 C 17 13.19441986083984 13.19441986083984 17 8.5 17 C 3.805579662322998 17 0 13.19441986083984 0 8.5 C 0 3.805579662322998 3.805579662322998 0 8.5 0 Z">
+				</path>
+			</svg>
+			<div id="pieceLabelGreen">
+				<span>Mr. Green</span>
+			</div>
+		</div>
+		<div id="peacock">
+			<svg class="pieceCellPeacock">
+				<rect id="pieceCellPeacock" rx="0" ry="0" x="0" y="0" width="123" height="23">
+				</rect>
+			</svg>
+			<svg class="piecePeacock">
+				<ellipse id="piecePeacock" rx="8.5" ry="8.5" cx="8.5" cy="8.5">
+				</ellipse>
+			</svg>
+			<div id="pieceLabelPeacock">
+				<span>Mrs. Peacock</span>
+			</div>
+		</div>
+		<div id="plum">
+			<svg class="pieceCellPlum">
+				<rect id="pieceCellPlum" rx="0" ry="0" x="0" y="0" width="123" height="23">
+				</rect>
+			</svg>
+			<svg class="piecePlum" viewBox="0 0 17 17">
+				<path id="piecePlum" d="M 8.5 0 C 13.19441986083984 0 17 3.805579662322998 17 8.5 C 17 13.19441986083984 13.19441986083984 17 8.5 17 C 3.805579662322998 17 0 13.19441986083984 0 8.5 C 0 3.805579662322998 3.805579662322998 0 8.5 0 Z">
+				</path>
+			</svg>
+			<div id="pieceLabelPlum">
+				<span>Prof. Plum</span>
+			</div>
+		</div>
+	</div>
+	<div id="notifications">
+		<svg class="notificationsBox">
+			<rect id="notificationsBox" rx="0" ry="0" x="0" y="0" width="437" height="69">
+			</rect>
+		</svg>
+		<div id="notificationsLabel">
+			<span>Notifications:</span>
+		</div>
+	</div>
+	<div id="playerId">
+		<div id="playerIdLabel">
+			<span>playerID:</span>
+		</div>
+		<svg class="playerId_bb">
+			<rect id="playerId_bb" rx="0" ry="0" x="0" y="0" width="90" height="16">
+			</rect>
+		</svg>
+	</div>
+	<div id="mainDisplayPane">
+		<div id="displayPaneLabel">
+			<span>Display Pane:</span>
+		</div>
+		<svg class="displayPanePlaceholder">
+			<rect id="displayPanePlaceholder" rx="0" ry="0" x="0" y="0" width="437" height="245">
+			</rect>
+		</svg>
+	</div>
+	<div id="yourCards">
+		<div id="yourCardsLabel">
+			<span>Your Cards:</span>
+		</div>
+		<svg class="cardsPlaceholder">
+			<rect id="cardsPlaceholder" rx="0" ry="0" x="0" y="0" width="175" height="251">
+			</rect>
+		</svg>
+	</div>
+	<div id="gameBoard">
+		<img id="Mask_Group_1" src="Mask_Group_1.png" srcset="Mask_Group_1.png 1x">
+			
+		</svg>
+		<div id="playerStartBoxes">
+			<svg class="plumStart">
+				<rect id="plumStart" rx="0" ry="0" x="0" y="0" width="19" height="19">
+				</rect>
+			</svg>
+			<svg class="peacockStart">
+				<rect id="peacockStart" rx="0" ry="0" x="0" y="0" width="19" height="19">
+				</rect>
+			</svg>
+			<svg class="greenStart">
+				<rect id="greenStart" rx="0" ry="0" x="0" y="0" width="19" height="19">
+				</rect>
+			</svg>
+			<svg class="whiteStart">
+				<rect id="whiteStart" rx="0" ry="0" x="0" y="0" width="19" height="19">
+				</rect>
+			</svg>
+			<svg class="mustardStart">
+				<rect id="mustardStart" rx="0" ry="0" x="0" y="0" width="19" height="19">
+				</rect>
+			</svg>
+			<svg class="scarletStart">
+				<rect id="scarletStart" rx="0" ry="0" x="0" y="0" width="19" height="19">
+				</rect>
+			</svg>
+		</div>
+		<svg class="gameBoardBorder">
+			<rect id="gameBoardBorder" rx="0" ry="0" x="0" y="0" width="738" height="650">
+			</rect>
+		</svg>
+		<img id="ClueLess_Logo" src="ClueLess_Logo.png" srcset="ClueLess_Logo.png 1x">
+			
+		<div id="rooms">
+			<div id="library">
+				<svg class="library_bv" viewBox="0 0 107 107">
+					<path id="library_bv" d="M 0 0 L 107 0 L 107 107 L 0 107 L 0 0 Z">
+					</path>
+				</svg>
+				<div id="roomLabelLibrary">
+					<span>Library</span>
+				</div>
+				<svg class="positionLibrary">
+					<rect id="positionLibrary" rx="0" ry="0" x="0" y="0" width="53" height="36">
+					</rect>
+				</svg>
+			</div>
+			<div id="billiardRoom">
+				<svg class="billiardRoom_bz">
+					<rect id="billiardRoom_bz" rx="0" ry="0" x="0" y="0" width="107" height="107">
+					</rect>
+				</svg>
+				<div id="roomLabelBilliard">
+					<span>Billiard Room</span>
+				</div>
+				<svg class="positionBilliard">
+					<rect id="positionBilliard" rx="0" ry="0" x="0" y="0" width="53" height="36">
+					</rect>
+				</svg>
+			</div>
+			<div id="diningRoom">
+				<svg class="diningRoom_b">
+					<rect id="diningRoom_b" rx="0" ry="0" x="0" y="0" width="106" height="107">
+					</rect>
+				</svg>
+				<div id="roomLabelDining">
+					<span>Dining Room</span>
+				</div>
+				<svg class="positionDining">
+					<rect id="positionDining" rx="0" ry="0" x="0" y="0" width="53" height="36">
+					</rect>
+				</svg>
+			</div>
+			<div id="conservatory">
+				<svg class="conservatory_b" viewBox="0 0 107 106">
+					<path id="conservatory_b" d="M 0 0 L 107 0 L 107 106 L 0 106 L 0 0 Z">
+					</path>
+				</svg>
+				<div id="roomLabelConservatory">
+					<span>Conservatory</span>
+				</div>
+				<div id="secretPassageConservatory">
+					<svg class="border2" viewBox="0 0 32.054 32.726">
+						<path id="border2" d="M 0 0 L 32.05410766601562 0 L 32.05410766601562 32.72635269165039 L 0 32.72635269165039 L 0 0 Z">
+						</path>
+					</svg>
+					<svg class="Icon_metro-arrow-down-right" viewBox="6.427 5.784 23.136 23.136">
+						<path id="Icon_metro-arrow-down-right" d="M 6.991531372070312 9.075434684753418 L 22.9803524017334 25.0644359588623 L 16.06693649291992 25.0644359588623 C 15.00212001800537 25.0644359588623 14.13890266418457 25.92765235900879 14.13890266418457 26.99246978759766 C 14.13890266418457 28.05728721618652 15.00211906433105 28.92050361633301 16.06693649291992 28.92050361633301 L 27.6351375579834 28.92050361633301 C 28.41490745544434 28.92050361633301 29.11797523498535 28.45072555541992 29.41633987426758 27.73030471801758 C 29.51527214050293 27.49159049987793 29.56214714050293 27.24100685119629 29.56208801269531 26.99246978759766 L 29.56317329406738 26.99246978759766 L 29.56317329406738 15.42426776885986 C 29.56317329406738 14.35945129394531 28.6999568939209 13.49623394012451 27.63513946533203 13.49623394012451 C 26.57026290893555 13.49623394012451 25.70710563659668 14.359450340271 25.70710563659668 15.42426776885986 L 25.70710563659668 22.3377742767334 L 9.71810245513916 6.348833560943604 C 9.341653823852539 5.972324848175049 8.848258018493652 5.784100532531738 8.354802131652832 5.784100532531738 C 7.861346244812012 5.784100532531738 7.367950439453125 5.972324848175049 6.991501808166504 6.348833560943604 C 6.238544464111328 7.101730823516846 6.238544464111328 8.322537422180176 6.991501808166504 9.075434684753418 Z">
+						</path>
+					</svg>
+				</div>
+				<svg class="positionConservatory">
+					<rect id="positionConservatory" rx="0" ry="0" x="0" y="0" width="53" height="36">
+					</rect>
+				</svg>
+			</div>
+			<div id="ballroom">
+				<svg class="ballroom_ce">
+					<rect id="ballroom_ce" rx="0" ry="0" x="0" y="0" width="107" height="106">
+					</rect>
+				</svg>
+				<div id="roomLabelBallroom">
+					<span>Ballroom</span>
+				</div>
+				<svg class="positionBallroom">
+					<rect id="positionBallroom" rx="0" ry="0" x="0" y="0" width="53" height="36">
+					</rect>
+				</svg>
+			</div>
+			<div id="kitchen">
+				<svg class="kitchen_ci" viewBox="0 0 106 106">
+					<path id="kitchen_ci" d="M 0 0 L 106 0 L 106 106 L 0 106 L 0 0 Z">
+					</path>
+				</svg>
+				<div id="roomLabelKitchen">
+					<span>Kitchen</span>
+				</div>
+				<div id="secretPassageKtichen">
+					<svg class="border1" viewBox="0 0 32.652 32.087">
+						<path id="border1" d="M 0 0 L 32.65213012695312 0 L 32.65213012695312 32.08673095703125 L 0 32.08673095703125 L 0 0 Z">
+						</path>
+					</svg>
+					<svg class="Icon_metro-arrow-down-right_cm" viewBox="6.427 5.784 23.136 23.136">
+						<path id="Icon_metro-arrow-down-right_cm" d="M 6.991531372070312 9.075434684753418 L 22.9803524017334 25.0644359588623 L 16.06693649291992 25.0644359588623 C 15.00212001800537 25.0644359588623 14.13890266418457 25.92765235900879 14.13890266418457 26.99246978759766 C 14.13890266418457 28.05728721618652 15.00211906433105 28.92050361633301 16.06693649291992 28.92050361633301 L 27.6351375579834 28.92050361633301 C 28.41490745544434 28.92050361633301 29.11797523498535 28.45072555541992 29.41633987426758 27.73030471801758 C 29.51527214050293 27.49159049987793 29.56214714050293 27.24100685119629 29.56208801269531 26.99246978759766 L 29.56317329406738 26.99246978759766 L 29.56317329406738 15.42426776885986 C 29.56317329406738 14.35945129394531 28.6999568939209 13.49623394012451 27.63513946533203 13.49623394012451 C 26.57026290893555 13.49623394012451 25.70710563659668 14.359450340271 25.70710563659668 15.42426776885986 L 25.70710563659668 22.3377742767334 L 9.71810245513916 6.348833560943604 C 9.341653823852539 5.972324848175049 8.848258018493652 5.784100532531738 8.354802131652832 5.784100532531738 C 7.861346244812012 5.784100532531738 7.367950439453125 5.972324848175049 6.991501808166504 6.348833560943604 C 6.238544464111328 7.101730823516846 6.238544464111328 8.322537422180176 6.991501808166504 9.075434684753418 Z">
+						</path>
+					</svg>
+				</div>
+				<svg class="positionKitchen">
+					<rect id="positionKitchen" rx="0" ry="0" x="0" y="0" width="53" height="36">
+					</rect>
+				</svg>
+			</div>
+			<div id="lounge">
+				<svg class="lounge_cp">
+					<rect id="lounge_cp" rx="0" ry="0" x="0" y="0" width="106" height="107">
+					</rect>
+				</svg>
+				<div id="roomLabelLounge">
+					<span>Lounge</span>
+				</div>
+				<div id="secretPassageLounge">
+					<svg class="border3" viewBox="0 0 32.366 32.622">
+						<path id="border3" d="M 0 0 L 32.3663330078125 0 L 32.3663330078125 32.62225341796875 L 0 32.62225341796875 L 0 0 Z">
+						</path>
+					</svg>
+					<svg class="Icon_metro-arrow-down-right_ct" viewBox="6.427 5.784 23.136 23.136">
+						<path id="Icon_metro-arrow-down-right_ct" d="M 6.991531372070312 9.075434684753418 L 22.9803524017334 25.0644359588623 L 16.06693649291992 25.0644359588623 C 15.00212001800537 25.0644359588623 14.13890266418457 25.92765235900879 14.13890266418457 26.99246978759766 C 14.13890266418457 28.05728721618652 15.00211906433105 28.92050361633301 16.06693649291992 28.92050361633301 L 27.6351375579834 28.92050361633301 C 28.41490745544434 28.92050361633301 29.11797523498535 28.45072555541992 29.41633987426758 27.73030471801758 C 29.51527214050293 27.49159049987793 29.56214714050293 27.24100685119629 29.56208801269531 26.99246978759766 L 29.56317329406738 26.99246978759766 L 29.56317329406738 15.42426776885986 C 29.56317329406738 14.35945129394531 28.6999568939209 13.49623394012451 27.63513946533203 13.49623394012451 C 26.57026290893555 13.49623394012451 25.70710563659668 14.359450340271 25.70710563659668 15.42426776885986 L 25.70710563659668 22.3377742767334 L 9.71810245513916 6.348833560943604 C 9.341653823852539 5.972324848175049 8.848258018493652 5.784100532531738 8.354802131652832 5.784100532531738 C 7.861346244812012 5.784100532531738 7.367950439453125 5.972324848175049 6.991501808166504 6.348833560943604 C 6.238544464111328 7.101730823516846 6.238544464111328 8.322537422180176 6.991501808166504 9.075434684753418 Z">
+						</path>
+					</svg>
+				</div>
+				<svg class="positionLounge">
+					<rect id="positionLounge" rx="0" ry="0" x="0" y="0" width="53" height="36">
+					</rect>
+				</svg>
+			</div>
+			<div id="hall">
+				<svg class="hall_cw">
+					<rect id="hall_cw" rx="0" ry="0" x="0" y="0" width="107" height="107">
+					</rect>
+				</svg>
+				<div id="roomLabelHall">
+					<span>Hall</span>
+				</div>
+				<svg class="positionHall">
+					<rect id="positionHall" rx="0" ry="0" x="0" y="0" width="53" height="36">
+					</rect>
+				</svg>
+			</div>
+			<div id="study">
+				<svg class="study_c">
+					<rect id="study_c" rx="0" ry="0" x="0" y="0" width="108" height="108">
+					</rect>
+				</svg>
+				<div id="roomLabelStudy">
+					<span>Study</span>
+				</div>
+				<div id="secretPassageStudy">
+					<svg class="border4" viewBox="0 0 33.895 32.901">
+						<path id="border4" d="M 0 0 L 33.894775390625 0 L 33.894775390625 32.90141296386719 L 0 32.90141296386719 L 0 0 Z">
+						</path>
+					</svg>
+					<svg class="Icon_metro-arrow-down-right_c" viewBox="6.427 5.784 23.136 23.136">
+						<path id="Icon_metro-arrow-down-right_c" d="M 6.991531372070312 9.075434684753418 L 22.9803524017334 25.0644359588623 L 16.06693649291992 25.0644359588623 C 15.00212001800537 25.0644359588623 14.13890266418457 25.92765235900879 14.13890266418457 26.99246978759766 C 14.13890266418457 28.05728721618652 15.00211906433105 28.92050361633301 16.06693649291992 28.92050361633301 L 27.6351375579834 28.92050361633301 C 28.41490745544434 28.92050361633301 29.11797523498535 28.45072555541992 29.41633987426758 27.73030471801758 C 29.51527214050293 27.49159049987793 29.56214714050293 27.24100685119629 29.56208801269531 26.99246978759766 L 29.56317329406738 26.99246978759766 L 29.56317329406738 15.42426776885986 C 29.56317329406738 14.35945129394531 28.6999568939209 13.49623394012451 27.63513946533203 13.49623394012451 C 26.57026290893555 13.49623394012451 25.70710563659668 14.359450340271 25.70710563659668 15.42426776885986 L 25.70710563659668 22.3377742767334 L 9.71810245513916 6.348833560943604 C 9.341653823852539 5.972324848175049 8.848258018493652 5.784100532531738 8.354802131652832 5.784100532531738 C 7.861346244812012 5.784100532531738 7.367950439453125 5.972324848175049 6.991501808166504 6.348833560943604 C 6.238544464111328 7.101730823516846 6.238544464111328 8.322537422180176 6.991501808166504 9.075434684753418 Z">
+						</path>
+					</svg>
+				</div>
+				<svg class="positionStudy">
+					<rect id="positionStudy" rx="0" ry="0" x="0" y="0" width="53" height="36">
+					</rect>
+				</svg>
+			</div>
+		</div>
+		<div id="hallways">
+			<div id="studyHall">
+				<svg class="hallwayStudyHall" viewBox="0 0 77.912 43">
+					<path id="hallwayStudyHall" d="M 0 0 L 77.91229248046875 0 L 77.91229248046875 43 L 0 43 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="positionHallwayStudyHall">
+					<rect id="positionHallwayStudyHall" rx="0" ry="0" x="0" y="0" width="19" height="19">
+					</rect>
+				</svg>
+			</div>
+			<div id="hallLounge">
+				<svg class="hallwayHallLounge" viewBox="0 0 79.889 43">
+					<path id="hallwayHallLounge" d="M 0 0 L 79.88935089111328 0 L 79.88935089111328 43 L 0 43 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="positionHallwayHallLounge">
+					<rect id="positionHallwayHallLounge" rx="0" ry="0" x="0" y="0" width="19" height="19">
+					</rect>
+				</svg>
+			</div>
+			<div id="libraryBilliard">
+				<svg class="hallwayLibraryBilliard" viewBox="0 0 78.981 43">
+					<path id="hallwayLibraryBilliard" d="M 0 0 L 78.98126220703125 0 L 78.98126220703125 43 L 0 43 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="positionHallwayLibraryBilliard">
+					<rect id="positionHallwayLibraryBilliard" rx="0" ry="0" x="0" y="0" width="19" height="19">
+					</rect>
+				</svg>
+			</div>
+			<div id="conservatoryBallroom">
+				<svg class="hallwayConservatoryBallroom" viewBox="0 0 78.723 42">
+					<path id="hallwayConservatoryBallroom" d="M 0 0 L 78.72320556640625 0 L 78.72320556640625 42 L 0 42 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="positionHallwayConservatoryBal">
+					<rect id="positionHallwayConservatoryBal" rx="0" ry="0" x="0" y="0" width="19" height="19">
+					</rect>
+				</svg>
+			</div>
+			<div id="billiardDining">
+				<svg class="hallwayBilliardDining" viewBox="0 0 79.974 43">
+					<path id="hallwayBilliardDining" d="M 0 0 L 79.9742431640625 0 L 79.9742431640625 43 L 0 43 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="positionHallwayBilliardDining">
+					<rect id="positionHallwayBilliardDining" rx="0" ry="0" x="0" y="0" width="19" height="19">
+					</rect>
+				</svg>
+			</div>
+			<div id="ballroomKitchen">
+				<svg class="hallwayBallroomKtichen" viewBox="0 0 79.606 42">
+					<path id="hallwayBallroomKtichen" d="M 0 0 L 79.60577392578125 0 L 79.60577392578125 42 L 0 42 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="positionHallwayBallroomKitchen">
+					<rect id="positionHallwayBallroomKitchen" rx="0" ry="0" x="0" y="0" width="19" height="19">
+					</rect>
+				</svg>
+			</div>
+			<div id="studyLibrary">
+				<svg class="hallwayStudyLibrary" viewBox="0 0 77.641 42.286">
+					<path id="hallwayStudyLibrary" d="M 0 0 L 77.64089202880859 0 L 77.64089202880859 42.28632354736328 L 0 42.28632354736328 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="positionHallwayStudyLibrary">
+					<rect id="positionHallwayStudyLibrary" rx="0" ry="0" x="0" y="0" width="19" height="19">
+					</rect>
+				</svg>
+			</div>
+			<div id="libraryConservatory">
+				<svg class="hallwayLibraryConservatory" viewBox="0 0 79.602 42.286">
+					<path id="hallwayLibraryConservatory" d="M 0 0 L 79.60205078125 0 L 79.60205078125 42.28632354736328 L 0 42.28632354736328 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="positionHallwayLibraryConserva">
+					<rect id="positionHallwayLibraryConserva" rx="0" ry="0" x="0" y="0" width="19" height="19">
+					</rect>
+				</svg>
+			</div>
+			<div id="hallBilliard">
+				<svg class="hallwayHallBilliard" viewBox="0 0 79.014 42.286">
+					<path id="hallwayHallBilliard" d="M 0 0 L 79.01411437988281 0 L 79.01411437988281 42.28632354736328 L 0 42.28632354736328 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="positionHallwayHallBilliard">
+					<rect id="positionHallwayHallBilliard" rx="0" ry="0" x="0" y="0" width="19" height="19">
+					</rect>
+				</svg>
+			</div>
+			<div id="billiardBallroom">
+				<svg class="hallwayBilliardBallroom" viewBox="0 0 80.02 42.286">
+					<path id="hallwayBilliardBallroom" d="M 0 0 L 80.02032470703125 0 L 80.02032470703125 42.28632354736328 L 0 42.28632354736328 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="positionHallwayBilliardBallroo">
+					<rect id="positionHallwayBilliardBallroo" rx="0" ry="0" x="0" y="0" width="19" height="19">
+					</rect>
+				</svg>
+			</div>
+			<div id="diningKitchen">
+				<svg class="hallwayDiningKitchen" viewBox="0 0 79.534 42.286">
+					<path id="hallwayDiningKitchen" d="M 0 0 L 79.53353881835938 0 L 79.53353881835938 42.28632354736328 L 0 42.28632354736328 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="positionHallwayDiningKitchen">
+					<rect id="positionHallwayDiningKitchen" rx="0" ry="0" x="0" y="0" width="19" height="19">
+					</rect>
+				</svg>
+			</div>
+			<div id="LoungeDining">
+				<svg class="hallwayLoungeDining" viewBox="0 0 78.638 42.286">
+					<path id="hallwayLoungeDining" d="M 0 0 L 78.63817596435547 0 L 78.63817596435547 42.28632354736328 L 0 42.28632354736328 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="positionHallwayLoungeDining">
+					<rect id="positionHallwayLoungeDining" rx="0" ry="0" x="0" y="0" width="19" height="19">
+					</rect>
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script id="applicationScript" type="text/javascript" src="activePlayer00.js"></script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Clue Game - The Oddjobs </title>
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="index.css" />
+</head>
+
+<body>
+
+    <div class="credscontainer">
+        <div class="topleft">
+            <p id="sessionId"></p>
+            <p id="token"></p>
+        </div>
+
+    </div>
+
+    <h1 id="wonMessage"></h1>
+    <table id="MainTable">
+        <tr>
+            <td id="GameboardHalf">
+                <div id="GameboardPane">
+                    <table id="GameboardTable">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div id="MissScarletHomeDots" class="characterHomeHz">
+                                    <button type="button" id="scarlet">Miss Scarlet</button>
+                                    <span class="scarletDot" id="Miss Scarlet Dot"></span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div class="gameboardRoom">
+                                    <button type="button" id="rm1">Study</button>
+                                    <div id="studyDots">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="gameboardHallwayHz" id>
+                                    <button type="button" id="rm2"> </button>
+                                    <div id="hallway1Dots">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="gameboardRoom">
+                                    <button type="button" id="rm3">Hall</button>
+                                    <div id="hallDots">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="gameboardHallwayHz">
+                                    <button type="button" id="rm4"> </button>
+                                    <div id="hallway2Dots">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="gameboardRoom">
+                                    <button type="button" id="rm5">Lounge</button>
+                                    <div id="loungeDots"></div>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="ProfPlumHomeDots" class="characterHomeHz">
+                                    <button type="button" id="plum">Prof. Plum</button>
+                                    <span class="plumDot" id="Prof. Plum Dot"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="gameboardHallwayVt">
+                                    <button type="button" id="rm6"> </button>
+                                    <div id="hallway3Dots"></div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="gameboardHallwayVt">
+                                    <button type="button" id="rm7"> </button>
+                                    <div id="hallway4Dots"></div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="gameboardHallwayVt">
+                                    <button type="button" id="rm8"> </button>
+                                    <div id="hallway5Dots"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="ColMustardHomeDots" class="characterHomeHz">
+                                    <button type="button" id="mustard">Col. Mustard</button>
+                                    <span class="mustardDot" id="Col. Mustard Dot"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div class="gameboardRoom">
+                                    <button type="button" id="rm9">Library</button>
+                                    <div id="libraryDots"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="gameboardHallwayHz">
+                                    <button type="button" id="rm10"> </button>
+                                    <div id="hallway6Dots"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="gameboardRoom">
+                                    <button type="button" id="rm11">Billiard Room</button>
+                                    <div id="billiardroomDots"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="gameboardHallwayHz">
+                                    <button type="button" id="rm12"> </button>
+                                    <div id="hallway7Dots"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="gameboardRoom">
+                                    <button type="button" id="rm13">Dining Room</button>
+                                    <div id="diningroomDots"></div>
+                                </div>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="MrsPeacockHomeDots" class="characterHomeHz">
+                                    <button type="button" id="peacock">Mrs. Peacock</button>
+                                    <span class="peacockDot" id="Mrs. Peacock Dot"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="gameboardHallwayVt">
+                                    <button type="button" id="rm14"> </button>
+                                    <div id="hallway8Dots"></div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="gameboardHallwayVt">
+                                    <button type="button" id="rm15"> </button>
+                                    <div id="hallway9Dots"></div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="gameboardHallwayVt">
+                                    <button type="button" id="rm16"> </button>
+                                    <div id="hallway10Dots"></div>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div class="gameboardRoom">
+                                    <button type="button" id="rm17">Conservatory</button>
+                                    <div id="conservatoryDots"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="gameboardHallwayHz">
+                                    <button type="button" id="rm18"> </button>
+                                    <div id="hallway11Dots"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="gameboardRoom">
+                                    <button type="button" id="rm19">Ballroom</button>
+                                    <div id="ballroomDots"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="gameboardHallwayHz">
+                                    <button type="button" id="rm20"> </button>
+                                    <div id="hallway12Dots"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="gameboardRoom">
+                                    <button type="button" id="rm21">Kitchen</button>
+                                    <div id="kitchenDots"></div>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div id="MrGreenHomeDots" class="characterHomeHz">
+                                    <button type="button" id="green">Mr. Green</button>
+                                    <span class="greenDot" id="Mr. Green Dot"></span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div id="MrsWhiteHomeDots" class="characterHomeHz">
+                                    <button type="button" id="white">Mrs. White</button>
+                                    <span class="whiteDot" id="Mrs. White Dot"></span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td>
+                <div id="LobbyFunctionality">
+                    <h3>Choose Character</h3>
+                    <table id="PlayerLobbyTable">
+                        <tr>
+                            <td id="Player1Box" class="PlayerStatusBoxDisabled">
+                                <p id="Player1Name" class="PlayerName">Hasn't Joined/p>
+                                <p id="Player1Character" class="PlayerCharacter">None Selected</p>
+                                <p id="Player1ReadyStatus" class="PlayerReadyStatus">Not Ready</p>
+                            </td>
+                            <td id="Player2Box" class="PlayerStatusBoxDisabled">
+                                <p id="Player2Name" class="PlayerName">Hasn't Joined</p>
+                                <p id="Player2Character" class="PlayerCharacter">None Selected</p>
+                                <p id="Player2ReadyStatus" class="PlayerReadyStatus">Not Ready</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="Player3Box" class="PlayerStatusBoxDisabled">
+                                <p id="Player3Name" class="PlayerName">Hasn't Joined</p>
+                                <p id="Player3Character" class="PlayerCharacter">None Selected</p>
+                                <p id="Player3ReadyStatus" class="PlayerReadyStatus">Not Ready</p>
+                            </td>
+                            <td id="Player4Box" class="PlayerStatusBoxDisabled">
+                                <p id="Player4Name" class="PlayerName">Hasn't Joined</p>
+                                <p id="Player4Character" class="PlayerCharacter">None Selected</p>
+                                <p id="Player4ReadyStatus" class="PlayerReadyStatus">Not Ready</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="Player5Box" class="PlayerStatusBoxDisabled">
+                                <p id="Player5Name" class="PlayerName">Hasn't Joined</p>
+                                <p id="Player5Character" class="PlayerCharacter">None Selected</p>
+                                <p id="Player5ReadyStatus" class="PlayerReadyStatus">Not Ready</p>
+                            </td>
+                            <td id="Player6Box" class="PlayerStatusBoxDisabled">
+                                <p id="Player6Name" class="PlayerName">Hasn't Joined</p>
+                                <p id="Player6Character" class="PlayerCharacter">None Selected</p>
+                                <p id="Player6ReadyStatus" class="PlayerReadyStatus">Not Ready</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="button" id="r3">Ready To Play</button>
+                </div>
+
+                <div id="PlayerTurnPane">
+                    <div id='notCards'>
+                        <div id="PlayerInfo">
+                            <span>Your player ID: </span>
+                            <span id="pId"></span>
+                            <br>
+                            <span>Your Character: </span>
+                            <span id="pCharacter"></span>
+                        </div>
+
+                        <div id="notificationsHolder">
+                            <p>Notifications</p>
+                            <div id="notifications"></div>
+                        </div>
+
+                        <div id="PlayerGeneralButtons">
+                            <div id="PlayerTurnButtons" class="MidPaneButtons">
+                                <button type="button" id="MoveTurn">Move</button> <br>
+                                <button type="button" id="makeSuggestion">Make Suggestion</button> <br>
+                                <button type="button" id="makeAccusation">Make Accusation</button> <br>
+                                <div id="End Turn">
+                                    <button type="button" id="end">End Turn</button>
+                                </div>
+                            </div>
+
+                            <div id="ReviewDisprovePane" class="MidPaneButtons">
+
+                                <button id="confirmDisprovalReciept">Continue</button>
+                            </div>
+
+                            <div id="MovePane" class="MidPaneButtons">
+                                <button type="button" id="confirmMove">Confirm Move</button>
+                            </div>
+                        </div>
+
+                        <div id="SuggestionPane" class="MidPaneButtons">
+                            <table>
+                                <tr>
+                                    <th>Room</th>
+                                    <th>Weapon</th>
+                                    <th>Suspect</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="rooms" id="room-select" size="10">
+
+                                            <option value="study">Study</option>
+                                            <option value="hall">Hall</option>
+                                            <option value="lounge">Lounge</option>
+                                            <option value="library">Library</option>
+                                            <option value="billiard room">Billiard Room</option>
+                                            <option value="dining room">Dining Room</option>
+                                            <option value="conservatory">Conservatory</option>
+                                            <option value="ballroom">Ballroom</option>
+                                            <option value="kitchen">Kitchen</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="weapons" id="weapon-select" size="10">
+
+                                            <option value="candlestick">Candlestick</option>
+                                            <option value="dagger">Dagger</option>
+                                            <option value="lead pipe">Lead Pipe</option>
+                                            <option value="revolver">Revolver</option>
+                                            <option value="rope">Rope</option>
+                                            <option value="wrench">Wrench</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="suspects" id="suspect-select" size="10">
+
+                                            <option value="Miss Scarlet">Miss Scarlet</option>
+                                            <option value="Col. Mustard">Col. Mustard</option>
+                                            <option value="Mrs. White">Mrs. White</option>
+                                            <option value="Mr. Green">Mr. Green</option>
+                                            <option value="Mrs. Peacock">Mrs. Peacock</option>
+                                            <option value="Prof. Plum">Prof. Plum</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <button id="sendSuggestion">Send Suggestion</button>
+                            <button id="sendAccusation">Send Accusation</button>
+                        </div>
+                    </div>
+
+
+                    <div id="DisprovePane">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div id="CardsPane">
+                                        <p> Your Cards</p>
+                                        <select name="cards" id="card-select">
+                                        </select>
+                                    </div>
+                                    <div id="disproveButtons">
+                                        <button id="disproveSuggestion">Disprove</button>
+                                        <button id="cantDisprove">Skip</button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </div>
+                    <div id=murderingDetailsDiv>
+                        <button id="peekbtn">Show Murdering Details</button>
+                        <p id=murderingDetails></p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <div>
+        <div id="GameStateObject">
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/client.js"></script>
+</body>
+
+</html>

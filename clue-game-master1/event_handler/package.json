@@ -1,0 +1,12 @@
+{
+  "name": "evhandler-svc",
+  "version": "1.0.0",
+  "scripts": {
+    "start" : "node src/event.handler_01.js"
+  },
+  "dependencies": {
+    "socket.io": "^2.3.0",
+    "redis": "^3.0.2",
+    "winston": "^3.3.3"
+  }
+}

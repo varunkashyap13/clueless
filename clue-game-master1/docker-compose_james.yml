@@ -1,0 +1,97 @@
+version: "3"
+
+
+services:
+  
+  cq: 
+    image: redis:latest
+    container_name: cq
+    env_file:
+      - env/env_vars.conf
+    volumes:
+      - /Users/hanyu/clue/data/redis
+    restart: always
+    expose:
+      - "6379"
+    ports:
+      - "6379:6379"
+    networks:
+      - backend   
+
+  mongo:
+    image: mongo:4.2
+    container_name: mongo
+    env_file:
+      - env/env_vars.conf
+    volumes:
+      - /Users/hanyu/clue/data/mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    networks:
+      - backend
+
+  apiserver:
+    container_name: apiserver
+    build: 
+      context: ./api/
+      dockerfile: Dockerfile
+    image: clueapi:0.2
+    restart: always
+    ports:
+      - "12000:12000"     
+    networks:
+      - frontend
+      - backend
+    depends_on:
+      - cq
+      - mongo
+  
+  uiserver:
+    container_name: uiserver
+    build: 
+      context: ./ui/
+      dockerfile: Dockerfile
+    image: clueui:0.3
+    restart: always
+    ports:
+      - "80:14000"
+    networks:
+      - frontend
+
+  wss:
+    container_name: wss
+    build: 
+      context: ./wss
+      dockerfile: Dockerfile
+    image: wss:0.3
+    restart: always
+    ports:
+      - "13000:13000"     
+    networks:
+      - backend
+    depends_on:
+      - cq
+      - mongo
+
+  event_handler:
+    container_name: evh
+    build:
+      context: ./event_handler
+      dockerfile: Dockerfile
+    image: evh:0.3
+    restart: always
+    networks:
+      - backend
+    depends_on:
+      - cq
+      - mongo
+
+networks :
+  frontend:
+    name: frontend
+    driver: bridge
+  backend:
+    name: backend 
+    driver: bridge
+

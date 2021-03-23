@@ -1,0 +1,370 @@
+.topleft {
+    position: absolute;
+    top: 0px;
+    left: 16px;
+    font-size: small;
+    z-index: +1;
+}
+
+#MainTable {
+    position: absolute;
+}
+
+.PlayerStatusBoxDisabled {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(128, 128, 128, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    
+}
+
+.PlayerStatusBoxEnabled {
+    width: 80px;
+    height: 80px;
+    color: rgb(0, 0, 0);
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#PlayerInfo {
+    min-height: 35px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin: 5px;
+} 
+
+#notCards {
+    height: 420px;
+    min-height:420px;
+    min-width:300px;
+}
+
+#notificationsHolder {
+    padding: 5px;
+}
+
+p {
+    margin: 0px;
+}
+
+#notifications {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 0px;
+    min-height: 100px;
+}
+
+#notCards {
+    min-height: 100px;
+}
+
+#CardsPane {
+    margin: 5px;
+}
+
+.gameboardRoom {
+    background-color: grey;
+    text-align: center;
+    vertical-align: center;
+    width: 80px;
+    height: 80px;
+}
+.gameboardHallwayHz {
+    background-color: grey;
+    text-align: center;
+    vertical-align: center;
+    width: 60px;
+    height:60px;
+}
+
+.gameboardHallwayVt {
+    background-color: grey;
+    text-align: center;
+    vertical-align: center;
+    width: 60px;
+    height:60px;
+    margin:auto;
+}
+
+#GameboardPane {
+    position: absolute;
+    top: 0px;
+}
+
+#PlayerTurnPane {
+    position: absolute;
+    left: 530px;
+}
+
+#LobbyFunctionality {
+    position: absolute;
+    left: 530px;
+}
+
+.MidPaneButtons {
+    min-height: 200px;
+}
+
+#GameStateObject {
+    position: absolute;
+    top: 600px;
+}
+
+#GameboardTable {
+    width: 100%;
+    min-width: 360px;
+    min-height: 360px;
+}
+
+
+#GameboardTable button {
+    font-size: x-small;
+}
+
+.characterHomeHz {
+    width: 50px;
+}
+
+button {
+    min-width: 20px;
+    min-height: 20px
+}
+
+#scarlet {
+    width: 45px;
+    margin: 2px;
+    color: black;
+}
+
+#plum {
+    color: black
+}
+
+#green {
+    color: black;
+}
+
+#white {
+    color: black;
+}
+
+#peacock {
+    color: black;
+}
+
+#mustard {
+    color: black;
+}
+
+#rm1 {
+    color: black;
+}
+
+#rm2 {
+    color: black;
+}
+
+#rm3 {
+    color: black;
+}
+
+#rm4 {
+    color: black;
+}
+
+#rm5 {
+    color: black;
+}
+
+#rm6 {
+    color: black;
+}
+#rm7 {
+    color: black;
+}
+
+#rm8 {
+    color: black;
+}
+
+#rm9 {
+    color: black;
+}
+
+#rm10 {
+    color: black;
+}
+
+#rm11 {
+    color: black;
+}
+
+#rm12 {
+    color: black;
+}
+
+#rm13 {
+    color: black;
+}
+
+#rm14 {
+    color: black;
+}
+
+#rm15 {
+    color: black;
+}
+
+#rm16 {
+    color: black;
+}
+
+#rm17 {
+    color: black;
+}
+
+#rm18 {
+    color: black;
+}
+#rm19 {
+    color: black;
+}
+
+#rm20 {
+    color: black;
+}
+
+#rm21 {
+    color: black;
+}
+
+#MissScarletHomeDots {
+    background-color: rgba(255, 0, 0, 0.5);
+    margin: auto;
+    padding: 3px;
+    min-height: 50px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#ProfPlumHomeDots {
+    background-color: rgba(128, 0, 128, 0.5);
+    margin: auto;
+    padding: 3px;
+    min-height: 50px;
+    border-color: black;
+    border-width: 1px;
+}
+
+#MrGreenHomeDots {
+    background-color: rgba(0, 128, 0, 0.5);
+    margin: auto;
+    padding: 3px;
+    min-height: 50px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#ColMustardHomeDots {
+    background-color: rgba(255, 255, 0, 0.5);
+    margin: auto;
+    padding: 3px;
+    min-height: 50px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#MrsPeacockHomeDots {
+    background-color: rgba(64, 224, 208, 0.5);
+    margin: auto;
+    padding: 3px;
+    min-height: 50px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#MrsWhiteHomeDots {
+    background-color: white;
+    margin: auto;
+    padding: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    min-height: 50px;
+}
+
+.scarletDot {
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    border-style: solid;
+    border-color: black;
+    border-width:2px;
+}
+
+.mustardDot {
+    height: 15px;
+    width: 15px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+    border-style: solid;
+    border-color: black;
+    border-width:2px;
+}
+
+.greenDot {
+    height: 15px;
+    width: 15px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    border-style: solid;
+    border-color: black;
+    border-width:2px;
+}
+
+.plumDot {
+    height: 15px;
+    width: 15px;
+    background-color: purple;
+    border-radius: 50%;
+    display: inline-block;
+    border-style: solid;
+    border-color: black;
+    border-width:2px;
+}
+
+.whiteDot {
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    border-style: solid;
+    border-color: black;
+    border-width:2px;
+}
+
+.peacockDot {
+    height: 15px;
+    width: 15px;
+    background-color: turquoise;
+    border-radius: 50%;
+    display: inline-block;
+    border-style: solid;
+    border-color: black;
+    border-width:2px;
+}
